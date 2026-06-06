@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "electron .",
-    "dist": "electron-builder --mac"
+    "dist": "electron-builder"
   },
   "devDependencies": {
     "electron": "^37.0.0",
@@ -19,10 +19,10 @@
     "productName": "AW App",
     "mac": {
       "category": "public.app-category.education",
-      "target": [
-        "dmg",
-        "zip"
-      ]
+      "target": ["dmg", "zip"]
+    },
+    "dmg": {
+      "format": "ULFO"
     }
   }
 }
